@@ -1,6 +1,6 @@
 {
   "name": "react-native-tabscrollview",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "similar to taobao app products page",
   "main": "index.js",
   "scripts": {
@@ -17,5 +17,9 @@
     "taobao"
   ],
   "author": "landandan",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/landandan/react-native-tabscrollview.git"
+  }
 }
