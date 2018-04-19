@@ -17,9 +17,5 @@
     "taobao"
   ],
   "author": "landandan",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/landandan/react-native-tabscrollview.git"
-  }
+  "license": "MIT"
 }
