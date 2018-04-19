@@ -20,6 +20,6 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/landandan/react-native-tabscrollview.git"
+    "url": "git://github.com/landandan/react-native-tabscrollview.git"
   }
 }
