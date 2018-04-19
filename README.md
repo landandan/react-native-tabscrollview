@@ -1,7 +1,7 @@
 # react-native-tabscrollview
 
 ### install
-`npm i react-native-tabscrollview`
+`npm install react-native-tabscrollview --save`
 
 ### example
 ```
