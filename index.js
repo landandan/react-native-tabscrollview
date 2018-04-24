@@ -87,12 +87,12 @@ export default class TabScrollView extends Component {
             }}
           >
             {
-              item.tabChildren &&
+              item.customTab &&
               (this.tabHighlight(index) ?
-                (item.tabHighlightChildren ? item.tabHighlightChildren : item.tabChildren) : item.tabChildren)
+                (item.customTabHighlight ? item.customTabHighlight : item.customTab) : item.customTab)
             }
             {
-              !item.tabChildren &&
+              !item.customTab &&
               <Text
                 style={[{ textAlign: 'center' }, { color: this.tabHighlight(index) ? 'red' : 'black' }]}>{item.tabName}</Text>
             }
