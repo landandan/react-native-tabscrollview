@@ -121,7 +121,7 @@ export default class TabScrollView extends Component {
               key={`sections${index}`}
               onLayout={(e) => {
                 this.sections[`sections${index}`] = e.nativeEvent.layout
-                this.sectionsYs.push(e.nativeEvent.layout.y)
+                this.sectionsYs.push(parseInt(e.nativeEvent.layout.y))
               }}
             >
               {item.scrollViewChildren}
