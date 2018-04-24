@@ -3,6 +3,23 @@
 ### install
 `npm install react-native-tabscrollview --save`
 
+## Props
+data: Array
+```
+{
+    tabName // 标签名称，自定义时可不传
+    scrollViewChildren // 对应标签子模块，必传
+    customTab // 自定义标签
+    customTabHighlight // 自定义标签高亮
+}
+```
+
+canScrollOut: boolean
+`当点击tab时对应的模块不足一页时，能否将该模块滚动到顶，默认为true`
+
+tabContainerStyle: style
+`自定义tab样式`
+
 ### example
 ```
 import React, { Component } from 'react';
@@ -19,19 +36,18 @@ export default class App extends Component<Props> {
       <View style={styles.container}>
         <TabScrollView data={[{
           tabName: '宝贝',
-          scrollViewChildren: <View style={{ height: 300, backgroundColor: 'green' }}></View>
+          scrollViewChildren: <View style={{ height: 300, backgroundColor: 'red' }}></View>
         }, {
-          tabName: '评价',
-          tabChildren: <Text style={[{ textAlign: 'center', backgroundColor: 'red' }]}>评价</Text>,
-          tabHighlightChildren: <Text
+          customTab: <Text style={[{ textAlign: 'center', backgroundColor: 'red' }]}>评价</Text>,
+          customTabHighlight: <Text
             style={[{ textAlign: 'center', backgroundColor: 'yellow' }]}>评价</Text>,
-          scrollViewChildren: <View style={{ height: 600, backgroundColor: 'gray' }}></View>
+          scrollViewChildren: <View style={{ height: 700, backgroundColor: 'yellow' }}></View>
         }, {
           tabName: '详情',
-          scrollViewChildren: <View style={{ height: 800, backgroundColor: 'white' }}></View>
+          scrollViewChildren: <View style={{ height: 800, backgroundColor: 'blue' }}></View>
         }, {
           tabName: '推荐',
-          scrollViewChildren: <View style={{ height: 300, backgroundColor: 'black' }}></View>
+          scrollViewChildren: <View style={{ height: 900, backgroundColor: 'green' }}></View>
         }]}/>
       </View>
     );
