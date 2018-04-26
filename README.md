@@ -1,4 +1,4 @@
-# react-native-tabscrollview
+# react-native-tabscrollview [![npm version](https://img.shields.io/npm/v/react-native-tabscrollview.svg?style=flat)](https://www.npmjs.com/package/react-native-tabscrollview)
 
 ### install
 `npm install react-native-tabscrollview --save`
