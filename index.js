@@ -27,12 +27,14 @@ export default class TabScrollView extends Component {
 
   static propTypes = {
     data: PropTypes.array,
+    hideTab: PropTypes.bool,
     canScrollOut: PropTypes.bool,
     tabContainerStyle: PropTypes.any,
   }
 
   static defaultProps = {
     data: [],
+    hideTab: false,
     canScrollOut: true,
     tabContainerStyle: {},
   }
@@ -134,8 +136,9 @@ export default class TabScrollView extends Component {
   }
 
   render() {
+    const { hideTab } = this.props
     return (<View style={{ flex: 1, width }}>
-      {this.renderTab()}
+      {!hideTab && this.renderTab()}
       {this.renderScrollView()}
     </View>)
   }

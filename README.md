@@ -14,6 +14,9 @@ data: Array
 }
 ```
 
+hideTab: boolean
+`是否隐藏tab，默认为false`
+
 canScrollOut: boolean
 `当点击tab时对应的模块不足一页时，能否将该模块滚动到顶，默认为true`
 
